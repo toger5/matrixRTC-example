@@ -1,7 +1,9 @@
 # MatrixRTC Example
 
-This is a simple example using MatrixRTC for a demo of the FOSDEM talk:
+This is a simple example using MatrixRTC for a demo of the FOSDEM talk:\
 [**MatrixRTC: Building Real-Time Applications on Matrix**](https://fosdem.org/2025/schedule/event/fosdem-2025-5034-matrixrtc-building-real-time-applications-on-matrix/).
+
+![Screenshot](/screenshots/readmeScreenshot.png?raw=true "Optional Title")
 
 It synchronizes mouse pointer positions and optionally allows users to display a collaborative whiteboard (TLDraw)
 that updates in real time. However, there is no persistent state.
