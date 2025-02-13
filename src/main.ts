@@ -168,8 +168,12 @@ async function run() {
   widget.api.setAlwaysOnScreen(true);
   session.joinRoomSession([focus]);
   createDeleteMouseElements(session.memberships);
+  try {
+    await livekitRoom.connect(sfuConfig.url, sfuConfig.jwt);
+  } catch (e) {
+    console.error("failed to connect to lk room: ", e);
+  }
   initTLDraw(livekitRoom);
-  await livekitRoom.connect(sfuConfig.url, sfuConfig.jwt);
 }
 
 try {
